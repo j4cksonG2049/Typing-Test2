@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Stats</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="default">
+    <nav>
+            <a href="index.html">Typing Test</a>
+            <a href="results.html">Player Stats</a>
+            </nav>
+    <h2 id="stats-title"><u>Here you can see your Words Per Minute and typing test stats!</u></h2>
+    <marquee> Beat Your All Time Best Today!</marquee>
+</body>
+<main>
+    <table id="results-table">
+        
+        <tr>
+            <th>Test</th>
+            <th>Words Per Minute</th>
+            <th>Accuracy</th>
+        </tr>
+        <tr>
+            <td>
+                15 Seconds
+            </td>
+            <td id="15-result"></td>
+            <td id="15-accuracy">%</td>
+        </tr>
+            <tr>
+            <td>
+                30 Seconds
+            </td>
+            <td id="30-result"></td>
+            <td id="30-accuracy">%</td>
+        </tr>
+            <tr>
+            <td>
+                60 Seconds
+            </td>
+            <td id="60-result"></td>
+            <td id="60-accuracy">%</td>
+        </tr>
+    </table>
+     <script src="results.js"></script>
+</main>
+</html>

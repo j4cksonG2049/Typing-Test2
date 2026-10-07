@@ -1,0 +1,211 @@
+body[data-theme="default"] {
+    --background: white;
+    --text: black;
+    --primary: red;
+    --secondary: black;
+    --box-background: lightgray;
+    --nav-text: white;
+    --hover: darkred;
+    --table-background: black;
+    --table-text:white;
+
+    background-image: url("images.jpg");
+    background-size: cover;
+    margin: 0;
+    text-align: center;
+    font-family: Georgia, serif;
+}
+body[data-theme="dark"] {
+    --background: #121212;
+    --text: #EAEAEA;
+    --primary: #6366F1;
+    --secondary:black;
+    --box-background: #2A2A2A;
+    --nav-text: #FFFFFF;
+    --hover: rgb(57, 15, 140);
+    --table-background: #1E1E1E;
+    --table-text: #EAEAEA;
+
+    background-image: url("images.jpg");
+    background-size: cover;
+    margin:0;
+    text-align: center;
+    background-color: var(--background);
+    font-family: Georgia, serif;
+}
+body[data-theme="light"] {
+    --background:white;
+    --text: black;
+    --primary: darkgray;
+    --secondary: black;
+    --box-background:lightblue;
+    --nav-text: black;
+    --hover: gray;
+    --table-background: lightgray;
+    --table-text: darkgray;
+
+    background-image: url("bright-image.jpg");
+    background-size: cover;
+    margin:0;
+    text-align: center;
+    background-color: var(--background);
+    font-family: Georgia, serif;
+}
+#heading-area{
+    text-align: center;
+    padding: 20px;
+    color: var(--nav-text)
+}
+#typing-area{
+    text-align: center;
+    color: var(--nav-text);
+}
+marquee{
+    color: var(--nav-text);
+    background-color: var(--primary);
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+}
+input{
+    height: 100px;
+    width: 500px;
+    font-size: 50px;
+    color: var(--text);
+    background-color:var(--background) ;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    background-color: var(--secondary);
+}
+nav a{
+    color: var(--primary);
+    font-size: 20px;
+}
+nav a:focus{
+color: var(--box-background);
+}
+nav a:hover{
+    color: var(--hover);
+}
+#stats-title{
+    color: var(--nav-text);
+}
+#review-title{
+    color: var(--primary);
+}
+label{
+    font-size: 25px;
+    color: var(--primary);
+    font-family: sans-serif;
+}
+#word-display{
+    color:var(--text);
+    background-color: var(--box-background);
+    width: 300px;
+    height:50px;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+button{
+    color: var(--nav-text);
+    background-color:var(--primary);
+    font-size: 30px;
+    width: 75;
+    height: 75;
+}
+button:focus{
+    background-color: var(--hover);
+    color: var(--nav-text);
+}
+button:hover{
+    background-color:var(--hover);
+}
+#review-heading{
+    color: var(--primary);
+}
+select{
+    color: var(--primary);
+    background-color: var(--nav-text);
+    width: 100px;
+    height: 50px;
+    font-size: 25px;
+}
+#review-heading{
+    color: var(--secondary);
+    background-color:var(--nav-text);
+    height: 30px
+}
+.web-thought{
+    color: var(--primary);
+    font-size: 15px;
+}
+#result{
+    color: var(--nav-text);
+    font-size: 20px;
+    height: 20px;
+}
+#countdown{
+    color: var(--nav-text);
+    font-size: 30px;
+}
+#results-table{
+    color: var(--nav-text);
+    background-color: var(--table-background);
+    font-size: 30px;
+    margin: 30px auto;
+}
+th, td {
+    padding: 15px;
+    border: 1px solid var(--box-background);
+    text-align: center;
+}
+tr:hover{
+    background-color: var(--hover);
+    color: var(--nav-text);
+}
+#average-table{
+    color: var(--nav-text);
+    background-color: var(--secondary);
+    font-size: 30px;
+    margin: 30px auto;
+}
+#dark-button{
+    width:40;
+    height:40px;
+    font-size:20px;
+    background-color:var(--box-background) ; 
+    color: var(--secondary);
+}
+#light-button{
+    width:40;
+    height:40px;
+    font-size:20px; 
+    background-color:var(--box-background) ;
+    color: var(--secondary);
+}
+#default-button{
+    width:40;
+    height:40px;
+    font-size:20px; 
+    background-color:var(--box-background) ;
+    color: var(--secondary);
+}
+#dark-button:hover{
+    color:var(--nav-text);
+    background-color:var(--hover);
+}
+#light-button:hover{
+    color:var(--nav-text);
+    background-color:var(--hover);
+}
+#default-button:hover{
+    color:var(--nav-text);
+    background-color:var(--hover);
+}

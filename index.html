@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Typing speed test</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body data-theme="default">
+        <nav>
+            <a href="typingtest.html">Typing Test</a>
+            <a href="results.html">Player Stats</a>
+            </nav>
+        <div id="heading-area">
+            <h1><u>Typing Speed Test!</u></h1>
+            <button id="default-button" data-theme="default">
+                Default
+            </button>
+            <button id="dark-button" data-theme="dark">
+                Dark
+            </button>
+             <button id="light-button" data-theme="light">
+                Light
+            </button>
+            <br>
+            <marquee class="para1">Test your typing ability today!</marquee>
+        </div>
+        <main>
+        <div id="typing-area">
+            <h2>Here you can put your typing to the test!</h2>
+            <div id="word-display"></div>
+            <br>
+            <input 
+            name="typingarea"
+            type="text" 
+            id="typing-input" 
+            placeholder="start typing..."
+            autocorrect="off"
+            spellcheck="false">
+            <br>
+            <br>
+            <label for="typingarea">Press the Button to start the Timer!</label>
+            <br>
+            <p id="result"></p>
+            <p  id="countdown"></p>
+            <br>
+            <div id="start-button" class="countdown">
+            <button id="start-15" value="15" class="timer">15 Seconds</button>
+            <button id="start-30" value="30" class="timer">30 Seconds</button>
+            <button id="start-60" value="60" class="timer">60 Seconds</button>
+            <br>
+            <br>
+            <p id="word-count">Words Correct: 0</p>
+            <p id="word-count-incorrect">Incorrect Words: 0</p>
+            </div>
+        </div>
+        </main>
+        <script src="functions.js"></script>
+    </body>
+    
+</html>
